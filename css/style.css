@@ -1,0 +1,121 @@
+:root {
+    --dark-teal: #125c54;
+    --light-teal: #12b4a3; 
+    --bg-color: #f7f9f9;
+    --text-color: #ffffff; 
+    --footer-color: #092327; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+
+
+.kozepso-doboz {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--dark-teal);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.jelmondat {
+    font-size: 1.1rem;
+}
+
+footer{
+    background-color: var(--footer-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: var(--dark-teal);
+    border-radius: 25px; 
+    margin: 1.5rem auto 2rem auto;
+    padding: 0.8rem 2rem;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--light-teal);
+}
+
+.szekcio-doboz {
+    background-color: var(--dark-teal);
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.szekcio-doboz h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.bemutatkozas-tartalom {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.kep-doboz {
+    background-color: var(--light-teal);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.sajat-kep {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    background-color: #ddd;
+    display: block;
+}
+
+.bemutatkozas-szoveg {
+    flex-grow: 1;
+}
+
+.bemutatkozas-szoveg h2 {
+    text-align: left;
+}
