@@ -133,7 +133,7 @@ nav a:hover {
 .keszseg-doboz {
     background-color: var(--light-teal);
     text-shadow: black 0.2rem 0.2rem 0.2rem;
-    height: 120px;
+    height: 300px;
     border-radius: 10px;
     display: flex;
     align-items: center;
