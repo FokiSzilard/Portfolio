@@ -2,7 +2,7 @@
     --dark-teal: #125c54;
     --light-teal: #12b4a3; 
     --bg-color: #f7f9f9;
-    --text-color: #ffffff; 
+    --text-color: #90C2E7; 
     --footer-color: #092327; 
 }
 
@@ -36,6 +36,7 @@ header {
 header h1 {
     font-size: 1.8rem;
     font-weight: 700;
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
 }
 
 .jelmondat {
@@ -43,7 +44,7 @@ header h1 {
 }
 
 footer{
-    background-color: var(--footer-color);
+    background-color: var(--footer-color);  
     text-align: center;
     padding: 1rem 0;
 }
@@ -84,12 +85,15 @@ nav a:hover {
     padding: 2.5rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
 }
 
 .szekcio-doboz h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
 }
 
 .bemutatkozas-tartalom {
@@ -113,9 +117,32 @@ nav a:hover {
 }
 
 .bemutatkozas-szoveg {
-    flex-grow: 1;
+    flex-grow: 1;   
 }
 
 .bemutatkozas-szoveg h2 {
     text-align: left;
+}
+
+.keszseg-racs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.keszseg-doboz {
+    background-color: var(--light-teal);
+    text-shadow: black 0.2rem 0.2rem 0.2rem;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.keszseg-doboz:hover {
+    transform: scale(1.05); 
 }
